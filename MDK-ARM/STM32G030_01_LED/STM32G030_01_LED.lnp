@@ -1,0 +1,26 @@
+--cpu Cortex-M0+
+"stm32g030_01_led\startup_stm32g030xx.o"
+"stm32g030_01_led\main.o"
+"stm32g030_01_led\gpio.o"
+"stm32g030_01_led\stm32g0xx_it.o"
+"stm32g030_01_led\stm32g0xx_hal_msp.o"
+"stm32g030_01_led\stm32g0xx_hal_gpio.o"
+"stm32g030_01_led\stm32g0xx_hal_tim.o"
+"stm32g030_01_led\stm32g0xx_hal_tim_ex.o"
+"stm32g030_01_led\stm32g0xx_hal_rcc.o"
+"stm32g030_01_led\stm32g0xx_hal_rcc_ex.o"
+"stm32g030_01_led\stm32g0xx_ll_rcc.o"
+"stm32g030_01_led\stm32g0xx_hal_flash.o"
+"stm32g030_01_led\stm32g0xx_hal_flash_ex.o"
+"stm32g030_01_led\stm32g0xx_hal_dma.o"
+"stm32g030_01_led\stm32g0xx_hal_dma_ex.o"
+"stm32g030_01_led\stm32g0xx_hal_pwr.o"
+"stm32g030_01_led\stm32g0xx_hal_pwr_ex.o"
+"stm32g030_01_led\stm32g0xx_hal_cortex.o"
+"stm32g030_01_led\stm32g0xx_hal.o"
+"stm32g030_01_led\stm32g0xx_hal_exti.o"
+"stm32g030_01_led\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "STM32G030_01_LED\STM32G030_01_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32G030_01_LED.map" -o STM32G030_01_LED\STM32G030_01_LED.axf
